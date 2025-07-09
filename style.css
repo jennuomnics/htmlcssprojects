@@ -1,0 +1,232 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #fcf5e9;
+    --dark-color: #333;
+    --container-normal: 1100px;
+    --container-wide: 1400px;
+    --container-narrow: 900px;
+}
+
+ul {
+    list-style: None;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.6;
+}
+
+.main-container {
+    background-color: #fff;
+    min-height: 100vh;
+    background-size: cover;
+}
+
+a {
+    text-decoration: None;
+}
+
+.gallery-flex {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.gallery-item {
+    width: calc(33.333% - 20px);
+    border-radius: 10px;
+}
+
+.gallery-item img {
+    border-radius: 10px;
+}
+
+.gallery-item:hover {
+    opacity: 0.9;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 20%;
+    padding: 10px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header div {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+header div a {
+    font-size: 15px;
+    cursor: pointer;
+    color: #333;
+    padding: 4px;
+}
+
+header div a:hover {
+    background: #f1e6e6;
+    color: #333;
+}
+
+main {
+    margin: 0 20%;
+}
+
+main h1 {
+    text-align: center;
+    margin: 80px 0;
+}
+
+main h1 span {
+    background: #f1e6e6;
+}
+
+.port-container {
+    width: calc(100%/3 - 20px);
+}
+
+.port-image {
+    width: 100%;
+    height: 100%;
+}
+
+.images-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+
+/* Contact Page */
+
+.contact-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 20%;
+    padding: 10px;
+}
+
+.contact-info p,
+h4 {
+    text-align: center;
+}
+
+.our-services {
+    background-color: #333;
+    color: #ffff;
+    text-align: center;
+    padding: 30px;
+}
+
+.our-services .services {
+    display: flex;
+    margin: 0 20%;
+    gap: 20px;
+}
+
+.services p {
+    font-size: 12px;
+}
+
+.our-team {
+    text-align: center;
+    padding: 30px;
+}
+
+.align-team {
+    display: flex;
+    margin: 0 20%;
+    gap: 20px;
+}
+
+.team-image {
+    width: calc(100% / 3 - 20px);
+    border-radius: 20px;
+}
+
+.image {
+    width: 100%;
+    height: 80%;
+}
+
+.container-us {
+    margin: 0 20%;
+}
+
+.container-us p,
+h4 {
+    text-align: center;
+}
+
+.container-us input,
+textarea {
+    display: block;
+    width: 100%;
+    margin: 30px;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    padding: 10px;
+    outline: None;
+    border-width: 1px;
+}
+
+.container-us button {
+    display: block;
+    width: 100%;
+    text-align: center;
+    background-color: #ffff;
+    padding: 15px;
+    cursor: pointer;
+    border-width: 1px;
+    margin-left: 3%;
+}
+
+.container-us button:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+@media screen and (max-width:768px) {
+    header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 10px;
+    }
+    .port-container {
+        width: calc(100%/2 - 20px);
+    }
+    .contact-info {
+        flex-direction: column;
+        justify-content: center;
+        gap: 10px;
+    }
+    .services {
+        display: flex;
+        flex-direction: column;
+    }
+    .align-team {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .team-image {
+        width: calc(100% - 20px);
+        border-radius: 20px;
+    }
+}
